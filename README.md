@@ -24,4 +24,4 @@ return response()->json_escape([
 
 ## References
 
-![HTTP Responses - Laravel - The PHP Framework For Web Artisans](https://laravel.com/docs/9.x/responses#json-responses)
+<a href="https://laravel.com/docs/9.x/responses#json-responses">HTTP Responses - Laravel - The PHP Framework For Web Artisans</a>
