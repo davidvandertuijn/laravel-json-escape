@@ -18,8 +18,27 @@ composer require davidvandertuijn/laravel-json-escape
 
 ```php
 return response()->json_escape([
-    "data" => "Hello World"
+    "text" => "<p>Hello World</p>"
 ]);
+```
+
+```json
+{"text":"Hello World"}
+```
+
+**Exclude**
+
+```php
+return response()->json_escape([
+    "text" => "Hello World",
+    "html" => "<p>Hello World</p>"
+], [
+    "html"
+]);
+```
+
+```json
+{"text":"Hello World","html":"<p>Hello World</p>"}
 ```
 
 ## References
