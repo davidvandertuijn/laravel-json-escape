@@ -1,0 +1,28 @@
+{
+    "name": "davidvandertuijn/laravel-json-escape",
+    "description": "Laravel filter JSON response against XSS",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David van der Tuijn",
+            "email": "davidvandertuijn@mac.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4" : {
+            "Davidvandertuijn\\LaravelJsonEscape\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Davidvandertuijn\\LaravelJsonEscape\\ServiceProvider"
+            ]
+        }
+    }
+}
